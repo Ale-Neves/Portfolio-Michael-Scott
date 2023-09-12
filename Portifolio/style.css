@@ -27,3 +27,29 @@ body {
   font-family: var(--fonte-primaria);
   font-size: 1rem;
 }
+
+/*------- Cabeçalho de Navegação -------*/
+
+.cabecalho {
+  margin: 3em 3em 0em 0em;
+}
+
+.cabecalho__lista_nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.8125em;
+  list-style-type: none;
+}
+
+.cabecalho__lista_nav a {
+  text-decoration: none;
+  color: var(--cor-fonte-primaria);
+  font-weight: 600;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+}
+
+.lista_nav__selecionada,
+.cabecalho__lista_nav a:hover {
+  color: var(--cor-fonte-secundaria) !important;
+}
