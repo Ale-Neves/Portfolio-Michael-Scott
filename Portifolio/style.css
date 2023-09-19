@@ -120,9 +120,30 @@ body {
   background-color: var(--cor-fundo-hover);
 }
 
+.navegacoes_nav__img {
+  width: 30px;
+}
+
 /*-------------- Rodape -------------*/
 
 .rodape {
   width: 100%;
   background-color: var(--cor-fonte-primaria);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: var(--cor-fonte-terciaria);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--fonte-terciaria);
+}
+
+.rodape__img_social {
+  width: 50px;
+}
+
+.rodape__sessao {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
 }
