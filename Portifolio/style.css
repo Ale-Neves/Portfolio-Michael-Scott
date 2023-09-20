@@ -1,5 +1,7 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Monda:wght@700&family=Montserrat:wght@400;600&display=swap');
 
+/* Variáveis de cores e fontes */
 :root {
   --cor-fonte-primaria: #f6f6f6;
   --cor-fonte-quaternaria: #b2b1b9;
@@ -16,11 +18,13 @@
   --fonte-terciaria: 'Monda', sans-serif;
 }
 
+/* Reset de margens e preenchimentos */
 * {
   margin: 0px;
   padding: 0px;
 }
 
+/* Estilos do corpo da página */
 body {
   background-color: var(--cor-fundo-primaria);
   box-sizing: border-box;
@@ -146,4 +150,97 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1%;
+}
+
+.rodape__sessao_info {
+  gap: 0.5em;
+}
+
+.info_links {
+  margin-left: 4%;
+}
+
+.info_links li {
+  margin-left: 15%;
+}
+
+.info_links li a {
+  color: var(--cor-fonte-terciaria);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+}
+
+.info_links li a:hover {
+  color: var(--cor-fonte-secundaria);
+}
+
+.info__telefone,
+.info__email {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.rodape__sessao_termos {
+  text-align: center;
+}
+
+.termos__copyright {
+  opacity: 50%;
+}
+
+.rodape__sessao_contate {
+  gap: 7px;
+}
+
+.contate__input {
+  border: 0 none;
+  outline: 0;
+  border-radius: 7px;
+  background-color: var(--cor-fonte-terciaria);
+  padding: 6px 10px 6px 15px;
+  color: var(--cor-fonte-primaria);
+  font-family: var(--fonte-terciaria);
+  font-size: 1rem;
+  line-height: 50%;
+}
+
+.contate__textarea::placeholder,
+.contate__input::placeholder {
+  color: var(--cor-fonte-primaria);
+  opacity: 70%;
+}
+
+.contate__textarea {
+  border: 0 none;
+  outline: 0;
+  border-radius: 7px;
+  background-color: var(--cor-fonte-terciaria);
+  padding: 6px 10px 6px 15px;
+  color: var(--cor-fonte-primaria);
+  font-family: var(--fonte-terciaria);
+  font-size: 1rem;
+  resize: none;
+}
+
+.contate__enviar {
+  border: 0 none;
+  outline: 0;
+  width: 45%;
+  padding: 5px 14px;
+  background: var(--cor-fonte-secundaria);
+  border-radius: 7px;
+  color: var(--cor-fonte-primaria);
+  font-family: var(--fonte-terciaria);
+  font-size: 1rem;
+  margin-left: 55%;
+  cursor: pointer;
+}
+
+.contate__input:hover,
+.contate__textarea:hover,
+.contate__enviar:hover {
+  opacity: 80%;
 }

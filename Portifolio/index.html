@@ -55,13 +55,13 @@
     </main>
     <footer class="rodape">
       <section class="rodape__sessao rodape__sessao_info">
-        <h3>Links</h3>
-        <ul>
+        <ul class="info_links">
+          <h3>Links</h3>
           <li><a href="">Marketing</a></li>
           <li><a href="">Suporte</a></li>
           <li><a href="">Informações</a></li>
         </ul>
-        <h3>
+        <h3 class="info__telefone">
           <img
             class="rodape__img_social"
             src="assets/imgs/Logo-Telefone-Roxo.png"
@@ -69,7 +69,7 @@
           />
           (18) 12345-6789
         </h3>
-        <h3>
+        <h3 class="info__email">
           <img
             class="rodape__img_social"
             src="assets/imgs/Logo-Email-Roxo.png"
@@ -107,13 +107,24 @@
           />
         </div>
         <h3>Termo de Uso - Política de Privacidade</h3>
-        <h3>Copyright © 2023 | Studway</h3>
+        <h4 class="termos__copyright">Copyright © 2023 | Studway</h4>
       </section>
       <section class="rodape__sessao rodape__sessao_contate">
         <h3>Contate-me:</h3>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Mensagem" />
-        <button>Enviar</button>
+        <input
+          class="contate__input email"
+          type="text"
+          placeholder="Email"
+          maxlength="50"
+        />
+        <textarea
+          class="contate__textarea"
+          type="text"
+          rows="3"
+          maxlength="60"
+          placeholder="Mensagem"
+        ></textarea>
+        <button class="contate__enviar">Enviar</button>
       </section>
     </footer>
   </body>
