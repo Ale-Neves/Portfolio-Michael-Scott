@@ -1,0 +1,22 @@
+.cabecalho__lista {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    justify-content: end;
+    padding: 20px 40px;
+}
+
+.cabecalho__item {
+    color: var(--cor-fonte-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.item--destaque {
+    color: var(--cor-fonte-secundaria);
+}
+
+.cabecalho__item:hover {
+    color: var(--cor-fonte-secundaria);
+}
