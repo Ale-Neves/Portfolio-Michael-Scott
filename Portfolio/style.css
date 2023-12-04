@@ -1,10 +1,7 @@
-
-/* ============ IMPORTES ============ */
 @import url('styles/reset.css');
 @import url('styles/cabecalho.css');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Monda:wght@700&family=Montserrat:wght@400;600&display=swap');
 
-/* ============ GLOBAL CONFIGS ============ */
 :root {
   --cor-fonte-primaria: #f6f6f6;
   --cor-fonte-secundaria: #a524e9;
@@ -19,18 +16,15 @@
   --fonte-primaria: 'Krona One', sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
   --fonte-terciaria: 'Monda', sans-serif;
-}
 
-* {
-  margin: 0px;
-  padding: 0px;
+  font-size: 16px; /* Definindo o tamanho base da fonte */
 }
 
 body {
   background-color: var(--cor-fundo-primaria);
+  /* Torna o cálculo do tamanho do elemento inclusivo, considerando padding e borda */
   box-sizing: border-box;
   color: var(--cor-fonte-primaria);
   font-family: var(--fonte-primaria);
-  font-size: 1rem;
+  font-size: 1rem; /* Usando o 'rem' para referenciar o tamanho base */
 }
-/*=================================*/
